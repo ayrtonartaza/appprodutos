@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+.h1{
+    font-size: 1.5rem;
+    
+}
+#tilde-verde{
+    display: none;
+}
+li{
+    list-style:none;
+}

@@ -15,8 +15,15 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
    }
    
 
-   localStorage.setItem("datos",JSON.stringify(datos));
-  console.log(localStorage.getItem(JSON.stringify("datos")));
+   if(localStorage.getItem("datos") === null){
+    var datosArray=[];
+    datosArray.push(datos);
+    localStorage.setItem("datos",JSON.stringify(datosArray))
+   }else{
+    var datosArray = JSON.parse(localStorage.getItem("datos"));
+    datosArray.push(datos);
+    localStorage.setItem("datos",JSON.stringify(datosArray))
+   }
  
    
    /* escribir loe elmentos introducidos en el input */

@@ -30,15 +30,16 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
    
  
    document.getElementById("formulario").reset();
+   escribirDatos();
   e.preventDefault(); 
   
-  escribirDatos();
+  
    
  };
 
- function escribirDatos(){
+ function escribirDatos(e){
    let datosArray = JSON.parse(localStorage.getItem("datos"));
-   for(let i =0; i<=datosArray.length; i++){
+   for(let i =0; i<datosArray.length; i++){
      let nombre = datosArray[i].nombre
      let telefono = datosArray[i].telefono;
      let producto = datosArray[i].producto;
@@ -49,6 +50,7 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
   <li id="items"> ${nombre} - ${telefono} - ${producto} - ${precio}
   <input type="button"   onclick="borrarDatos(nombre)" value="eliminar" class="botoneliminar btn-flat red">
   </li>  `;
+  
    }
    
   

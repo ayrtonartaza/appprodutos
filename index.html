@@ -28,7 +28,7 @@
                
                   <ul class="col blue">
                     <!-- <li><a href="app.html">App</a></li> -->
-                    <li class="right indigo" ><a href="clientes.html" >Clientes</a></li>
+                    <li class="right indigo" ><a href="clientes.html">Clientes</a></li>
                     <!-- <li><a href="explicacion.html">Información</a></li> -->
                   </ul>
                 
@@ -37,7 +37,9 @@
               
              
               
-              
+            <div class="aviso__exito">
+              Guardado
+            </div>
               
             <div class="container">
               <div class="row">
@@ -48,23 +50,24 @@
                 <form class="col s12" id="formulario" onsubmit="return false" autocomplete="on" >
                   
                   <div class="row card-panel">
-                    <div class="input-field col s12">
+                    <div class="input col s12">
                       <label for="nombre" class="grey-text text-darken-3">Nombre</label>
                       <input type="text"  id="nombre" maxlength="20" required placeholder="Juan">
+                      
                     </div>
                     
-                    <div class="input-field col s12">
+                    <div class="input col s12">
                         <label for="telefono" class="grey-text text-darken-3">Teléfono</label>
-                      <input type="tel"  id="teléfono" maxlength="20" placeholder="11 0000 0000" >
+                      <input type="tel"  id="teléfono" maxlength="10" placeholder="11 0000 0000" >
                       <div id="avisotelefono">tienes que poner numeros</div>
                       </div>
                       
-                      <div class="input-field col s12">
+                      <div class="input col s12">
                           <label for="producto" class="grey-text text-darken-3">Producto/Servicio</label>
                         <input type="text"  id="producto" maxlength="20" class="validate" placeholder="corte de pelo">
                         </div>
 
-                        <div class="input-field col s12">
+                        <div class="input col s12">
                             <label for="precio" class="grey-text text-darken-3">Precio</label>
                           <input type="number"  id="precio" class="validate" step="0.01" placeholder="300" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==9) return false;">
                           </div>

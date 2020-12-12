@@ -20,13 +20,14 @@ h3{
   padding: 12px 12px;
   max-width: 220px;
   margin-right: 16px;
-  min-height: 230px;
+  min-height: 250px;
   transition: .3s ease ;
   position: relative;
 }
 span{
     font-weight: 500;
-   padding-top: 32px;
+  
+   
 }
 #tilde-verde {
   display: none;
@@ -36,14 +37,18 @@ span{
   list-style: none;
   margin-right: 66px;
 }
+
 ul li:hover{
   opacity: .9;
   
 }
+.items{
+  padding-top: 4px;
+}
 label{
   position: sticky;
 }
-.input-field{
+.input{
   margin-top: 24px;
  
 }
@@ -75,7 +80,24 @@ input{
   right: 0;
   display: none;
 }
+.aviso__exito{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 25px;
+  position: absolute;
+  top: 4vh;
+  z-index: -12;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease-in-out .3s;
+  margin: auto;
+  background-color: rgb(23, 138, 23);
+  width: 70%;
+  height: 80px;
 
+}
 
 @media screen and (max-width:550px){
   #vista{
@@ -92,4 +114,22 @@ input{
     min-height: 180px;
    
   }
+  
+}
+@media screen and (max-width:350px){
+  #vista{
+    display: flex;
+    flex-flow: column ;
+    width: 103%;
+  }
+  .card {
+    padding: 12px 12px;
+    max-width: fit-content;
+    min-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-height: 190px;
+   
+  }
+  
 }

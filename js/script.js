@@ -1,4 +1,16 @@
+alert("Buenas jhony , gracias por la consultaria gratuita. La seccion 'clientes' le falta css. Saludos" )
+
 let form = document.querySelector("form");
+let avisoexito=document.querySelector(".aviso__exito");
+function avisopopup (){
+  avisoexito.style.opacity = "0";
+  avisoexito.style.zIndex= "-12";
+
+}
+
+
+
+
 /* guardas datos */
 document.getElementById("formulario").addEventListener("submit",guardarDatos);
   function guardarDatos (e){
@@ -22,9 +34,16 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
       
        document.getElementById("formulario").addEventListener("submit",comprobarform)
        
+
+    
+      
+        
     }()
     );
-    
+    avisoexito.style.zIndex= "2";
+  avisoexito.style.opacity = "1";
+  
+  setTimeout(avisopopup,2000);
   form.reset();
   const datos ={
 
@@ -44,6 +63,7 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
     localStorage.setItem("datos",JSON.stringify(datosArray))
    
 }
+
 
 e.preventDefault();
 escribir();
@@ -65,7 +85,7 @@ function escribir(e){
     let producto = datosArray[i].producto;
     let precio = datosArray[i].precio;
   vista.innerHTML += `<div class="card black-text  " >
-  <li><span>Nombre: </span>${nombre}  <br>  <span>Teléfono: </span>${telefono}    <br> <span>Producto/servicio: </span>${producto}    <br>  <span>Precio: </span>${precio}  <br>  <button class ="btn red " onclick="borrar('${telefono}')">Borrar</button></li>
+  <li><div class="items"><span>Nombre: </span>${nombre}</div>   <div class="items"> <span>Teléfono: </span>${telefono}</div>     <div class="items"><span>Producto/servicio: </span>${producto}</div>    <div class="items"> <span>Precio: </span>${precio}</div>   <br>  <button class ="btn red " onclick="borrar('${telefono}')">Borrar</button></li>
   </div>
   `;
   

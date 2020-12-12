@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;
+  padding-top: 72px;
+}
+#vista{
+  display: flex;
+  flex-flow: row wrap ;
+  
+}
+
+.card {
+  padding: 12px 12px;
+  max-width: 220px;
+  margin-right: 16px;
+  min-height: 230px;
+  transition: .3s ease ;
+  position: relative;
+}
+span{
+    font-weight: 500;
+   padding-top: 32px;
+}
+#tilde-verde {
+  display: none;
+}
+
+.card li {
+  list-style: none;
+  margin-right: 66px;
+}
+ul li:hover{
+  opacity: .9;
+  
+}
+label{
+  position: sticky;
+}
+.input-field{
+  margin-top: 24px;
+ 
+}
+input{
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+#vista{
+  margin-left: -10px;
+  
+}
+
+.btn{
+  position: absolute;
+ 
+  left: 12px;
+  bottom: 12px;
+}
+#vistaclientes {
+  padding: 1rem;
+}
+#telefono {
+  position: relative;
+}
+#avisotelefono {
+  color: rgb(180, 78, 38);
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+
+@media screen and (max-width:550px){
+  #vista{
+    display: flex;
+    flex-flow: column ;
+    width: 103%;
+  }
+  .card {
+    padding: 12px 12px;
+    max-width: fit-content;
+    min-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    min-height: 180px;
+   
+  }
+}

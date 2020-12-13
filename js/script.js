@@ -1,5 +1,6 @@
 alert("Buenas jhony ,hace poco comence a trabajar de ui y maquetador pero todavia me falta mucho por aprender y agradezco que haya esta espacio donde aprendo un monton mirando los proyectos de los demás. La seccion 'clientes' le falta css. Saludos" );
 
+
 let form = document.querySelector("form");
 let boton=document.querySelector(".btn-flat");
 let border__form = document.querySelector("#border__form");
@@ -59,14 +60,17 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
     precio:precio
    }
    if (localStorage.getItem("datos") === null){
+    
     let datosArray = [];
     datosArray.push(datos);
-    localStorage.setItem("datos",JSON.stringify(datosArray))
+    localStorage.setItem("datos",JSON.stringify(datosArray));
+    
     
 }else{
     let datosArray = JSON.parse(localStorage.getItem("datos"));
     datosArray.push(datos);
     localStorage.setItem("datos",JSON.stringify(datosArray))
+    
    
 }
 
@@ -109,10 +113,13 @@ function borrar(telefono){
     if(datosArray[i].telefono == telefono ){
           datosArray.splice(i,1)
     }
+    else{
+      
+    }
   }
   localStorage.setItem("datos",JSON.stringify(datosArray))
   escribir();
-  
+ 
 }
  
 

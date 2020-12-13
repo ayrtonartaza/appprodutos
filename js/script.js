@@ -50,7 +50,7 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
     border__form.style.width = "100%";
     border__form.style.display = "block";
     
-  setTimeout(avisopopup,1600);
+  setTimeout(avisopopup,1200);
   form.reset();
   const datos ={
 

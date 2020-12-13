@@ -7,6 +7,15 @@
   position: absolute;
   margin-top: 4px;
 }
+#nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: fixed;
+  z-index: 32;
+}
 .h1 {
   font-size: 3rem;
 }
@@ -16,7 +25,7 @@ h2{
 }
 h3{
   font-size: 1.5rem;
-  padding-top: 72px;
+  padding-top: 52px;
 }
 #vista{
   display: flex;

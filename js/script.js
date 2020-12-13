@@ -1,11 +1,13 @@
-alert("Buenas jhony , gracias por la consultaria gratuita. La seccion 'clientes' le falta css. Saludos" )
+alert("Buenas jhony ,hace poco comence a trabajar de ui y maquetador pero todavia me falta mucho por aprender y agradezco que haya esta espacio donde aprendo un monton mirando los proyectos de los demás. La seccion 'clientes' le falta css. Saludos" );
 
 let form = document.querySelector("form");
-let avisoexito=document.querySelector(".aviso__exito");
+let boton=document.querySelector(".btn-flat");
+let border__form = document.querySelector("#border__form");
+let vacio = document.querySelector("#vacio");
 function avisopopup (){
-  avisoexito.style.opacity = "0";
-  avisoexito.style.zIndex= "-12";
-
+  boton.classList.remove("green");
+  boton.style.border = "none";
+  border__form.style.display = "none"; 
 }
 
 
@@ -40,10 +42,14 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
         
     }()
     );
-    avisoexito.style.zIndex= "2";
-  avisoexito.style.opacity = "1";
-  
-  setTimeout(avisopopup,2000);
+    vacio.style.display = "none";
+    boton.classList.add("green");
+    boton.style.border = "green 2px solid";
+    
+    border__form.style.width = "100%";
+    border__form.style.display = "block";
+    
+  setTimeout(avisopopup,1600);
   form.reset();
   const datos ={
 

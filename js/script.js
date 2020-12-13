@@ -1,6 +1,5 @@
-alert("Buenas jhony ,hace poco comence a trabajar de ui y maquetador pero todavia me falta mucho por aprender y agradezco que haya esta espacio donde aprendo un monton mirando los proyectos de los demás. La seccion 'clientes' le falta css. Saludos" );
 
-
+alert("buenas jhony, gracias por el espacio. (a la seccion clientes le falta css)")
 let form = document.querySelector("form");
 let boton=document.querySelector(".btn-flat");
 let border__form = document.querySelector("#border__form");

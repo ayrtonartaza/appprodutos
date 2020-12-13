@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
 }
-
+#vacio{
+  z-index: -2;
+  position: absolute;
+  margin-top: 4px;
+}
 .h1 {
   font-size: 3rem;
 }

@@ -43,7 +43,7 @@ document.getElementById("formulario").addEventListener("submit",guardarDatos);
         
     }()
     );
-    vacio.style.display = "none";
+    
     boton.classList.add("green");
     boton.style.border = "green 2px solid";
     
@@ -113,9 +113,9 @@ function borrar(telefono){
     if(datosArray[i].telefono == telefono ){
           datosArray.splice(i,1)
     }
-    else{
+    
       
-    }
+    
   }
   localStorage.setItem("datos",JSON.stringify(datosArray))
   escribir();
@@ -123,8 +123,6 @@ function borrar(telefono){
 }
  
 
-
- 
 
 
 

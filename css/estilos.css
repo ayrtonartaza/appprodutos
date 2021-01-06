@@ -111,7 +111,7 @@ input{
 #avisotelefono {
   color: rgb(180, 78, 38);
   position: absolute;
-  right: 0;
+  right: 44px;
   display: none;
 }
 .aviso__exito{

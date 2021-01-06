@@ -13,8 +13,8 @@ function escribir(){
         let nombrestring= JSON.stringify(nombreobjeto);
         let nombre = nombrestring.toUpperCase() ;
        
-vista.innerHTML += `<div class="card black-text  " id="cajaclientes" >
-<li><span>Nombre: </span>${nombre}  <br>  <span>Teléfono: </span>${telefono}    
+vista.innerHTML += `<div class="card black-text  " id="cardclientes" >
+<li><span>Nombre: </span>${nombre}   <span>Teléfono: </span>${telefono}</li>  
 </div>
 `;
     }

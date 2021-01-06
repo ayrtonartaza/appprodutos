@@ -1,5 +1,4 @@
 
-alert("buenas jhony, gracias por el espacio. (a la seccion clientes le falta css)")
 let form = document.querySelector("form");
 let boton=document.querySelector(".btn-flat");
 let border__form = document.querySelector("#border__form");
@@ -93,9 +92,9 @@ function escribir(e){
     let telefono = datosArray[i].telefono;
     let producto = datosArray[i].producto;
     let precio = datosArray[i].precio;
-  vista.innerHTML += `<div class="card black-text  " >
+  vista.innerHTML += `<div class="card black-text  " id="vistaingresos" >
   <li><div class="items"><span>Nombre: </span>${nombre}</div>   <div class="items"> <span>Teléfono: </span>${telefono}</div>     <div class="items"><span>Producto/servicio: </span>${producto}</div>    <div class="items"> <span>Precio: </span>${precio}</div>   <br>  <button class ="btn red " onclick="borrar('${telefono}')">Borrar</button></li>
-  </div>
+  </div> 
   `;
   
   }

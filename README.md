@@ -1,3 +1,1 @@
-# appprodutos
-app para ingresar datos del cliente
-Y productos
+Deploy:cloud::https://registratuscobros.netlify.app
